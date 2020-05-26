@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/keyline_4"
+            android:background="?android:colorBackground">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/frag_story_details_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/keyline_4"
+                android:textAlignment="center"
+                android:textAppearance="?attr/textAppearanceHeadline1"
+                android:textColor="?attr/colorOnBackground"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Title" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="@dimen/line_width"
+                android:layout_height="@dimen/line_height"
+                android:layout_marginTop="16dp"
+                android:background="?attr/colorOnBackground"
+                app:layout_constraintEnd_toEndOf="@+id/frag_story_details_title"
+                app:layout_constraintStart_toStartOf="@+id/frag_story_details_title"
+                app:layout_constraintTop_toBottomOf="@+id/frag_story_details_title" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/frag_story_details_summary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/keyline_4"
+                android:textAppearance="?attr/textAppearanceHeadline3"
+                android:text="@string/summary_label"
+                android:textColor="?attr/colorOnBackground"
+                app:layout_constraintEnd_toEndOf="@+id/frag_story_details_title"
+                app:layout_constraintStart_toStartOf="@+id/frag_story_details_title"
+                app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/frag_story_details_summary_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/keyline_2"
+                android:background="@drawable/drawable_rounded_rect"
+                android:backgroundTint="@color/color_control_highlight"
+                android:padding="@dimen/keyline_4"
+                android:textAppearance="?attr/textAppearanceHeadline4"
+                android:textColor="?attr/colorOnPrimary"
+                android:textAlignment="center"
+                android:lineSpacingExtra="@dimen/line_spacing_extra"
+                app:layout_constraintEnd_toEndOf="@+id/frag_story_details_title"
+                app:layout_constraintStart_toStartOf="@+id/frag_story_details_title"
+                app:layout_constraintTop_toBottomOf="@+id/frag_story_details_summary"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+
+            <LinearLayout
+                android:id="@+id/frag_story_details_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/keyline_5"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@+id/frag_story_details_summary_text"
+                app:layout_constraintStart_toStartOf="@+id/frag_story_details_summary_text"
+                app:layout_constraintTop_toBottomOf="@+id/frag_story_details_summary_text" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/frag_story_details_the_end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/keyline_5"
+                android:layout_marginBottom="@dimen/keyline_5"
+                android:text="@string/the_end_label"
+                android:textAlignment="center"
+                android:textAppearance="?attr/textAppearanceHeadline2"
+                android:textColor="?attr/colorOnBackground"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frag_story_details_content" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

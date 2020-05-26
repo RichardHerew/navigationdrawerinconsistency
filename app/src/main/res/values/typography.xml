@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.Dicoding.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/playfair_display_bold</item>
+        <item name="android:fontFamily">@font/playfair_display_bold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textFontWeight">700</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="TextAppearance.Dicoding.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/playfair_display_bold</item>
+        <item name="android:fontFamily">@font/playfair_display_bold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textFontWeight">700</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="TextAppearance.Dicoding.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/muli</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textFontWeight">700</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextAppearance.Dicoding.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/muli</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textFontWeight">300</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.Dicoding.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/muli</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textFontWeight">500</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.Dicoding.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/muli</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textFontWeight">500</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.Dicoding.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/muli</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textFontWeight">300</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

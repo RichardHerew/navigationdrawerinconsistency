@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/drawer_menu_primary">
+        <item
+            android:id="@+id/home_dest"
+            android:title="@string/nav_drawer_home_label"
+            android:icon="@drawable/svg_home" />
+        <item
+            android:id="@+id/about_dest"
+            android:title="@string/nav_drawer_about_me_label"
+            android:icon="@drawable/svg_profile" />
+    </group>
+</menu>

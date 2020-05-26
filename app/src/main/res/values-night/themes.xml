@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Dicoding" parent="Base.Theme.Dicoding">
+        <item name="colorPrimary">@color/yellow_400</item>
+        <item name="colorPrimaryVariant">@color/yellow_200</item>
+        <item name="colorSecondary">@color/purple_400</item>
+        <item name="colorSecondaryVariant">@color/purple_600</item>
+        <item name="android:background">@color/black_900</item>
+        <item name="colorSurface">@color/black_800</item>
+        <item name="colorOnPrimary">@color/black_900</item>
+        <item name="colorOnSecondary">@color/black_900</item>
+        <item name="colorOnBackground">@color/white</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorOnError">@color/red_200</item>
+        <item name="colorSubtitle">@color/gray_300</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

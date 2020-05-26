@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <style name="Widget.Dicoding.ShapeableImageView.Rounded" parent="">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Dicoding.ShapeableImageView.Rounded</item>
+    </style>
+    <style name="Widget.Dicoding.ShapeableImageView.Circular" parent="">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Dicoding.ShapeableImageView.Circular</item>
+    </style>
+    <style name="Widget.Dicoding.MaterialTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="Widget.Dicoding.NavigationView" parent="Widget.Design.NavigationView">
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="itemTextAppearance">?attr/textAppearanceBody1</item>
+        <item name="itemTextColor">@color/color_nav_view_item</item>
+        <item name="itemIconTint">@color/color_nav_view_item</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.Dicoding.ShapeableImageView.Rounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/corner_radius</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.Dicoding.ShapeableImageView.Circular" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

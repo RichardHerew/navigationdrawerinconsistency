@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="story"
+            type="com.mobile.dicoding.Story" />
+        <variable
+            name="clickListener"
+            type="com.mobile.dicoding.StoryListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/vh_story_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/keyline_0"
+        android:background="@drawable/drawable_rounded_rect"
+        android:backgroundTint="?attr/colorSurface"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:onClick="@{() -> clickListener.onClick(story)}">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/vh_story_cover"
+            style="@style/Widget.Dicoding.ShapeableImageView.Rounded"
+            android:layout_width="@dimen/book_cover_width"
+            android:layout_height="@dimen/book_cover_height"
+            android:layout_marginStart="@dimen/keyline_4"
+            android:layout_marginTop="@dimen/keyline_4"
+            android:layout_marginBottom="@dimen/keyline_4"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@{story.cover}"
+            tools:srcCompat="@drawable/img_the_tortoise_and_the_hare" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/vh_story_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/keyline_4"
+            android:layout_marginEnd="@dimen/keyline_4"
+            android:text="@{story.title}"
+            android:textAppearance="?attr/textAppearanceHeadline3"
+            android:textColor="?attr/colorOnSurface"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/vh_story_cover"
+            app:layout_constraintTop_toTopOf="@+id/vh_story_cover"
+            tools:text="Harry Potter" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/vh_story_author"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/keyline_4"
+            android:text="@{story.author}"
+            android:textAppearance="?attr/textAppearanceHeadline4"
+            android:textColor="?attr/colorSubtitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/vh_story_cover"
+            app:layout_constraintStart_toStartOf="@+id/vh_story_title"
+            app:layout_constraintTop_toBottomOf="@+id/vh_story_title"
+            tools:text="J.K. Rowling" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/vh_story_rating"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:drawableStart="@drawable/drawable_star_small"
+            android:drawablePadding="@dimen/keyline_2"
+            android:gravity="center_vertical"
+            android:text="@{Double.toString(story.rating)}"
+            android:textColor="?attr/colorOnSurface"
+            app:layout_constraintBottom_toBottomOf="@+id/vh_story_cover"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="4.3" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

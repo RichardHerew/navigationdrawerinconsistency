@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Dicoding</string>
+    <string name="nav_drawer_about_me_label">About Me</string>
+    <string name="headline_label">What do you want to read?</string>
+    <string name="nav_view_overline">Book reader</string>
+    <string name="nav_drawer_home_label">Home</string>
+    <string name="name_label">Richard</string>
+    <string name="email_label">someemail@gmail.com</string>
+    <string name="summary_label">Summary</string>
+    <string name="the_end_label">~ The End ~</string>
+    <string name="stories_label">Short Stories</string>
+</resources>

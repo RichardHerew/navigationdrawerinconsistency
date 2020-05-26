@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="yellow_500">#fcd12a</color>
+    <color name="yellow_300">#ffff63</color>
+    <color name="yellow_400">#E2D74E</color> <!--Night Mode-->
+    <color name="yellow_200">#fcffa8</color> <!--Night Mode-->
+    <color name="purple_500">#aa00ff</color>
+    <color name="purple_700">#7200ca</color>
+    <color name="purple_400">#ea80fc</color> <!--Night Mode-->
+    <color name="purple_600">#b64fc8</color> <!--Night Mode-->
+    <color name="red_200">#cf6679</color>
+    <color name="red_600">#b00020</color>
+    <color name="black_900">#000</color>
+    <color name="black_800">#1a1a1a</color> <!--Night Mode (Surface)-->
+    <color name="white">#FFFFFF</color>
+    <color name="gray_500">#797e88</color>
+    <color name="gray_300">#A5A7AF</color>
+</resources>

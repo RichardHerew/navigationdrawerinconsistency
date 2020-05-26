@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Dicoding" parent="Base.Theme.Dicoding" />
+    <style name="Base.Theme.Dicoding" parent="Base.Theme.ThemeBuilder">
+        <item name="colorPrimary">@color/yellow_500</item>
+        <item name="colorPrimaryVariant">@color/yellow_300</item>
+        <item name="colorSecondary">@color/purple_500</item>
+        <item name="colorSecondaryVariant">@color/purple_700</item>
+        <item name="android:background">@color/white</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnPrimary">@color/black_900</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorOnBackground">@color/black_900</item>
+        <item name="colorOnSurface">@color/black_900</item>
+        <item name="colorOnError">@color/red_600</item>
+        <item name="colorControlHighlight">@color/color_control_highlight</item>
+        <item name="colorSubtitle">@color/gray_500</item>
+        <item name="android:textViewStyle">@style/Widget.Dicoding.MaterialTextView</item>
+        <item name="textAppearanceHeadline1">@style/TextAppearance.Dicoding.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.Dicoding.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.Dicoding.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.Dicoding.Headline4</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.Dicoding.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.Dicoding.Body2</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.Dicoding.Overline</item>
+        <item name="navigationViewStyle">@style/Widget.Dicoding.NavigationView</item>
+        <item name="overlayAlpha">0.75</item>
+        <item name="rippleAlpha">0.1</item>
+    </style>
+    <style name="Base.Theme.ThemeBuilder" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">?android:colorBackground</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">?android:attr/colorBackground</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+</resources>
